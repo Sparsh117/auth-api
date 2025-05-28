@@ -1,11 +1,12 @@
 {
   "name": "auth-api-nodejs",
   "version": "1.0.0",
-  "description": "User authentication API with JWT",
-  "main": "index.js",
+  "description": "User authentication API with JWT and session management",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "debug": "nodemon --inspect server.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -17,5 +18,8 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 } 
